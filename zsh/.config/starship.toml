@@ -1,0 +1,16 @@
+format = """
+$character\
+"""
+
+right_format = """
+$directory\
+"""
+
+[character]
+format = "$symbol "
+success_symbol = "[ 󰣎](#f6c177)"
+error_symbol = "[ 󱢟](#f6c177)"
+
+[directory]
+format = "[$path](#ebbcba)"
+

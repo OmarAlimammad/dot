@@ -1,0 +1,57 @@
+* {
+  font-family: "Lexend Deca Medium", "JetBrainsMonoNF Medium", "Noto Color Emoji";
+  border: none;
+}
+
+window#waybar {
+  background-color: rgba(25, 23, 36, 0.7);
+}
+
+#window {
+  color: #908caa;
+}
+
+#workspaces {
+  margin: 0px 4px;
+}
+
+#workspaces button {
+  padding: 0 2px;
+  color: #6e6a86;
+}
+
+#workspaces button:hover {
+  background: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#workspaces button.active {
+  color: #ebbcba;
+}
+
+#battery {
+  padding: 2px 8px;
+  color: #c4a7e7;
+}
+
+#pulseaudio {
+  padding: 2px 8px;
+  padding-left: 10px;
+  color: #c4a7e7;
+}
+
+#clock {
+  padding: 2px 8px;
+  margin-right: 4px;
+  color: #ebbcba;
+}
+
+
+#custom-media-icon,
+#custom-media-prev,
+#custom-media-name,
+#custom-media-next {
+  padding: 2px 8px;
+  color: #31748f;
+}

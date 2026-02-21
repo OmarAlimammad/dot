@@ -1,0 +1,79 @@
+{
+  "layer": "top",
+  "modules-left": [ "hyprland/workspaces" ],
+  "modules-center": [ "hyprland/window" ], 
+  "modules-right": [ "group/media", "group/bat", "group/vol", "group/time" ],
+
+  "group/media": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 200,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/media-icon",
+      "custom/media-prev",
+      "custom/media-name",
+      "custom/media-next" 
+    ]
+  },
+
+  "custom/media-icon": {
+    "format": "",
+    "exec": "playerctl -p spotify metadata --format '{\"text\": \"\uf1bc\", \"tooltip\": \"\"}' --follow",
+    "tooltip": false
+  },
+
+  "custom/media-prev": {
+    "format": "{}",
+    "tooltip": false,
+    "exec": "playerctl -p spotify metadata --format '{{ \"\uf048\" }}' --follow",
+    "on-click": "playerctl -p spotify previous"
+  },
+
+  "custom/media-name": {
+    "format": "{}",
+    "max-length": 40,
+    "tooltip": false,
+    "exec": "playerctl -p spotify metadata --format '{{artist}} - {{title}}' --follow",
+    "on-click": "playerctl -p spotify play-pause"
+  },
+
+  "custom/media-next": {
+    "format": "{}",
+    "tooltip": false,
+    "exec": "playerctl -p spotify metadata --format '{{ \"\uf051\" }}' --follow",
+    "on-click": "playerctl -p spotify next"
+  },
+  "group/bat": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 200, "transition-left-to-right": false },
+    "modules": [ "battery", "battery#text" ]
+  },
+
+  "battery": {
+    "format": "{icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "tooltip": false
+  },
+
+  "battery#text": { 
+    "format": "{capacity}%", 
+    "tooltip": false 
+  },
+  "group/vol": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 200, "transition-left-to-right": false },
+    "modules": [ "pulseaudio", "pulseaudio#text" ]
+  },
+  "pulseaudio": { "format": "󰓃", "tooltip": false },
+  "pulseaudio#text": { "format": "{volume}%", "tooltip": false },
+
+  "group/time": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 200, "transition-left-to-right": false },
+    "modules": [ "clock#icon", "clock" ]
+  },
+  "clock#icon": { "format": "󰥔", "tooltip": false },
+  "clock": { "format": "{:%H:%M}", "format-alt": "{:%a, %b %d}", "tooltip": false }
+}

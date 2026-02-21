@@ -1,0 +1,87 @@
+configuration {
+    modi:                       "drun,window";
+    show-icons:                 true;
+    display-drun:               "";
+    display-window:             "";
+    drun-display-format:        "{name}";
+    font:                       "Lexend Deca 12";
+}
+
+@theme "/dev/null"
+
+* {
+    /* Added Alpha channel (CC = 80% opacity) */
+    bg:     #191724cc; 
+    cur:    #1f1d2ecc;
+    
+    fg:     #e0def4;
+    muted:  #6e6a86;
+    accent: #ebbcba;
+    pine:   #31748f;
+    gold:   #f6c177;
+    love:   #eb6f92;
+
+    background-color:   transparent;
+    text-color:         @fg;
+    margin:             0;
+    padding:            0;
+    spacing:            0;
+}
+
+window {
+    width:              600px;
+    background-color:   @bg; /* Uses the transparent variable */
+    border:             2px;
+    border-color:       @accent;
+    border-radius:      12px;
+}
+
+mainbox {
+    children:           [ inputbar, listview ];
+}
+
+inputbar {
+    children:           [ prompt, entry ];
+    background-color:   @cur; /* Uses the transparent variable */
+    padding:            12px;
+}
+
+prompt {
+    padding:            0px 12px 0px 4px;
+    text-color:         @accent;
+}
+
+entry {
+    placeholder:        "...";
+    placeholder-color:  @muted;
+}
+
+listview {
+    lines:              8;
+    columns:            1;
+    fixed-height:       false;
+    padding:            10px;
+}
+
+element {
+    padding:            8px;
+    spacing:            12px;
+    border-radius:      8px;
+}
+
+element selected {
+    background-color:   @accent;
+}
+
+element-text selected {
+    text-color:         @bg;
+}
+
+element-icon {
+    size:               32px;
+}
+
+element-text {
+    vertical-align:     0.5;
+    text-color:         @accent;
+}

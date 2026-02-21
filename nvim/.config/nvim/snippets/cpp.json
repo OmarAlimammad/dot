@@ -1,0 +1,26 @@
+{
+  "OLLAA": {
+    "prefix": "cd",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "#define int long long",
+      "",
+      "void run() {",
+      "\t${1:}",
+      "}",
+      "",
+      "signed main() {",
+      "\tios::sync_with_stdio(0);",
+      "\tcin.tie(nullptr);",
+      "\tint t = 1;",
+      "\tcin >> t;",
+      "\twhile (t--) {",
+      "\t\trun();",
+      "\t}",
+      "}"
+    ],
+    "description": "OLLAA"
+  }
+}
