@@ -3,7 +3,7 @@
 packages=(
   nvim npm unzip
   zsh zoxide eza starship
-  tmux fzf
+  tmux fzf yazi
   bazaar firefox thunar
   swaync swww
   waybar
@@ -16,7 +16,7 @@ packages=(
 )
 
 folders=(
-  kitty nvim rofi tmux waybar zsh hypr
+  kitty nvim rofi tmux waybar zsh hypr yazi
 )
 
 yay -Syu --noconfirm "${packages[@]}"
