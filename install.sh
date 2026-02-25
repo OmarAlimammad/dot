@@ -5,7 +5,7 @@ packages=(
   zsh zoxide eza starship
   tmux fzf
   bazaar firefox thunar
-  swaync swaybg
+  swaync swww
   waybar
   rofi
   hypremoji hyprshot
