@@ -3,11 +3,10 @@
 packages=(
   nvim npm unzip
   zsh zoxide eza starship
-  tmux fzf yazi
-  bazaar firefox thunar
+  tmux fzf yazi 7zip
+  bazaar firefox
   swaync swww
-  waybar
-  rofi
+  waybar rofi
   hypremoji hyprshot
   stow
   spotify-adblock
@@ -19,7 +18,12 @@ folders=(
   kitty nvim rofi tmux waybar zsh hypr yazi
 )
 
-yay -Syu --noconfirm "${packages[@]}"
+cd paru
+makepkg -si
+
+cd ..
+
+paru -Syu --noconfirm "${packages[@]}"
 
 for folder in "${folders[@]}"; do
   stow -R "$folder"
