@@ -1,0 +1,20 @@
+window {
+   background-color: rgba(25, 23, 36, 0.85);
+   font-family: "Lexend Deca Medium", "JetBrainsMono Nerd Font", sans-serif;
+   font-size: 3.5rem;
+   color: #f6c177;
+ }
+
+ button {
+   background-color: #1f1d2e;
+   color: #ebbcba;
+   border: 3px solid #ebbcba;
+   border-radius: 20px;
+   margin: 15px;
+   transition: all 0.1s ease-in-out;
+ }
+
+ button:focus {
+  padding: 20px; 
+  margin: 5px; 
+}

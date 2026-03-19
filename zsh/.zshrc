@@ -1,3 +1,5 @@
+export PATH="$HOME/.cargo/bin:$PATH"
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -10,4 +12,4 @@ alias py="python"
 alias ls="eza --icons -la"
 
 source ~/.zsh/fsh/fsh.plugin.zsh
-source ~/.dot/zsh/cp.zsh
+source ~/.zsh/cp.zsh

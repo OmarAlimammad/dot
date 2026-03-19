@@ -5,17 +5,19 @@ packages=(
   zsh zoxide eza starship
   tmux fzf yazi 7zip
   bazaar
-  swaync swww
+  swww
   waybar rofi
   hypremoji hyprshot
+  hyprlock hypridle
+  wlogout
   stow
   spotify-adblock
-  nwg-look rose-pine-gtk-theme
+  nwg-look rose-pine-gtk-theme rose-pine-cursor
   ttf-jetbrains-mono-nerd lexend-deca-git
 )
 
 folders=(
-  kitty nvim rofi tmux waybar zsh hypr yazi
+  mako wlogout kitty nvim rofi tmux waybar zsh hypr yazi
 )
 
 cd paru
@@ -26,7 +28,5 @@ cd ..
 paru -Syu --noconfirm "${packages[@]}"
 
 for folder in "${folders[@]}"; do
-  stow -R "$folder"
+  stow "$folder"
 done
-
-chsh -s $(which zsh)
