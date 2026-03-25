@@ -4,7 +4,6 @@ packages=(
   nvim npm unzip
   zsh zoxide eza starship
   tmux fzf yazi 7zip
-  bazaar
   swww
   waybar rofi
   hypremoji hyprshot

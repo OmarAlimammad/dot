@@ -1,25 +1,22 @@
 configuration {
     modi:                       "drun,window";
     show-icons:                 true;
-    display-drun:               "";
-    display-window:             "";
+    display-drun:               " ";
+    display-window:             " ";
     drun-display-format:        "{name}";
-    font:                       "Lexend Deca 12";
+    font:                       "Lexend Deca 11";
 }
 
 @theme "/dev/null"
 
 * {
-    /* Added Alpha channel (CC = 80% opacity) */
-    bg:     #191724cc; 
-    cur:    #1f1d2ecc;
+    /* Transparency suffix: aa (~66%) */
+    bg:     #191724aa; 
+    cur:    #1f1d2eaa;
     
     fg:     #e0def4;
     muted:  #6e6a86;
     accent: #ebbcba;
-    pine:   #31748f;
-    gold:   #f6c177;
-    love:   #eb6f92;
 
     background-color:   transparent;
     text-color:         @fg;
@@ -29,8 +26,8 @@ configuration {
 }
 
 window {
-    width:              600px;
-    background-color:   @bg; /* Uses the transparent variable */
+    width:              480px;      /* Compact width for list view */
+    background-color:   @bg; 
     border:             2px;
     border-color:       @accent;
     border-radius:      12px;
@@ -42,12 +39,12 @@ mainbox {
 
 inputbar {
     children:           [ prompt, entry ];
-    background-color:   @cur; /* Uses the transparent variable */
+    background-color:   @cur; 
     padding:            12px;
 }
 
 prompt {
-    padding:            0px 12px 0px 4px;
+    padding:            0px 8px 0px 4px;
     text-color:         @accent;
 }
 
@@ -57,14 +54,16 @@ entry {
 }
 
 listview {
-    lines:              8;
-    columns:            1;
+    lines:              4;          /* Vertical list entries */
+    columns:            1;          /* Back to single column */
     fixed-height:       false;
     padding:            10px;
+    spacing:            4px;
 }
 
 element {
-    padding:            8px;
+    orientation:        horizontal;  /* Text next to icon */
+    padding:            8px 12px;
     spacing:            12px;
     border-radius:      8px;
 }
@@ -74,14 +73,14 @@ element selected {
 }
 
 element-text selected {
-    text-color:         @bg;
+    text-color:         #191724;    /* Contrast color for readability */
 }
 
 element-icon {
-    size:               32px;
+    size:               36px;       /* Slightly larger than original, but fits list */
 }
 
 element-text {
     vertical-align:     0.5;
-    text-color:         @accent;
+    text-color:         @fg;
 }

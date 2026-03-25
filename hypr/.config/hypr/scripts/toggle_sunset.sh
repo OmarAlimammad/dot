@@ -6,3 +6,4 @@ then
 else
   hyprsunset -t 3500 &
 fi
+

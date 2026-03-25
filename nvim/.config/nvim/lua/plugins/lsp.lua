@@ -12,6 +12,7 @@ return {
       }
     })
 
+    vim.lsp.enable("jdtls")
     vim.lsp.enable("cssls")
     vim.lsp.enable("lua_ls")
     vim.lsp.enable("clangd")

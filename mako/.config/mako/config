@@ -5,9 +5,7 @@ layer=overlay
 anchor=top-right
 
 font=Lexend Deca Medium 10
-width=300
-height=110
-margin=10
+margin=8
 padding=15
 border-size=2
 border-radius=10
@@ -16,8 +14,7 @@ max-icon-size=48
 
 background-color=#191724cc
 text-color=#e0def4
-border-color=#c4a7e7
-progress-color=source #26233a
+border-color=#9ccfd8
 
 [urgency=low]
 default-timeout=2500
@@ -26,4 +23,5 @@ default-timeout=2500
 default-timeout=5000
 
 [urgency=critical]
+border-color=#eb6f92
 default-timeout=10000

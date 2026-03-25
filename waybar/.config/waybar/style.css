@@ -1,5 +1,5 @@
 * {
-  font-family: "Lexend Deca Medium", "JetBrainsMonoNF Medium", "Noto Color Emoji";
+  font-family: "Lexend Deca Medium";
   border: none;
 }
 
@@ -10,18 +10,17 @@ window#waybar {
 .modules-center {
   background-color: #191724;
   opacity: 0.9;
-  min-height: 30px;
   padding: 2px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid #31748f;
 }
 
 #workspaces {
-  margin: 4px;
+  margin: 2px;
 }
 
 #workspaces button {
-  padding: 0 2px;
+  padding: 0 1px;
   color: #6e6a86;
 }
 
@@ -30,11 +29,13 @@ window#waybar {
 }
 
 #battery {
-  padding: 0 8px;
+  padding: 0 4px;
+  margin-right: 4px;
   color: #9ccfd8;
 }
 
 #clock {
-  padding: 0 8px;
+  padding: 0 4px;
+  margin-left: 4px;
   color: #c4a7e7;
 }
