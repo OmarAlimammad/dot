@@ -1,8 +1,11 @@
 {
-  "margin": 8,
   "mode": "overlay",
-  "modules-center": [ "clock", "hyprland/workspaces", "battery" ],
-  "hyprland/workspaces": { "persistent-workspaces": { "*": 5 } },
-  "battery": { "format": "{capacity}", "format-charging": " {capacity}", "interval": 5 },
-  "clock": { "format": "{:%H:%M}", "tooltip": false }
+  "modules-center": [ "custom/battery_clock" ],
+  "custom/battery_clock": {
+    "exec": "~/.config/waybar/scripts/clock.sh",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": false
+  }
 }

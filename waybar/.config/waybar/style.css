@@ -7,35 +7,29 @@ window#waybar {
   background: transparent;
 }
 
-.modules-center {
-  background-color: #191724;
-  opacity: 0.9;
-  padding: 2px;
-  border-radius: 10px;
-  border: 2px solid #31748f;
+#custom-battery_clock {
+  background-color: rgba(25, 23, 36, 0.75);
+  border: 1px solid rgba(156, 207, 216, 0.1);
+  border-radius: 16px;
+  
+  padding: 4px 16px;
+  margin-top: 6px;
+  
+  transition: all 0.3s ease;
 }
 
-#workspaces {
-  margin: 2px;
+#custom-battery_clock.foam {
+    color: #9ccfd8;
 }
 
-#workspaces button {
-  padding: 0 1px;
-  color: #6e6a86;
+#custom-battery_clock.rose {
+    color: #ebbcba;
 }
 
-#workspaces button.active {
-  color: #ebbcba;
+#custom-battery_clock.iris {
+    color: #c4a7e7;
 }
 
-#battery {
-  padding: 0 4px;
-  margin-right: 4px;
-  color: #9ccfd8;
-}
-
-#clock {
-  padding: 0 4px;
-  margin-left: 4px;
-  color: #c4a7e7;
+#custom-battery_clock.love {
+    color: #eb6f92;
 }

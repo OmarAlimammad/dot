@@ -10,6 +10,7 @@ $directory\
 format = "$symbol "
 success_symbol = "[ 󰣎](#f6c177)"
 error_symbol = "[ 󱢟](#f6c177)"
+vimcmd_symbol = "[ 󰣎](#c4a7e7)"
 
 [directory]
 format = "[$path](#ebbcba)"
